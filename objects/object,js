@@ -1,0 +1,55 @@
+
+// const newObj = [...'abc'];
+// console.log(newObj)
+// const obj1 ={
+//     key1 : 'value1',
+//     key2 : 'value2',
+// }
+// const obj2 ={
+//     key3 : 'value3',
+//     key4 : 'value4',
+// }
+// // const newObj = {...obj1, ...obj2}
+// const newObj = {...obj1}
+// console.log(newObj)
+
+// const band = {
+//     bandName: "led zepplin",
+//     famousSong: "stair-way to heaven",
+//     age:12,
+//     love: 16,
+
+
+// };
+// const bandName =band.bandName;
+// const famousSong = band.famousSong;
+// console.log(bandName, famousSong);
+// let {bandName, famousSong, ...restObj}=band;
+// console.log(bandName);
+// console.log(restObj);\
+// const arr = [
+//     {firstName:'kashish', age: 12, gender:'male'},
+//     {firstName:'rawat', age: 34, gender:'male'},
+//     {firstName:'negi', age: 43, gender:'male'}];
+    // for(let array of arr){
+    //     console.log(array.firstName);
+    // }
+    // let [{age}, , {gender}] = arr;
+    // console.log(gender);
+    // function fun(a){
+    //    return a%2===0;
+    // }
+    // console.log(fun(6));
+    // function a(d){
+    //     return d.slice(0,1);
+    // }
+    // console.log(a('love'));
+    // let fun=(a,b)=>{
+    //     for(let i=0; i<a.length; i++){
+    //         if(a[i]===b){
+    //             return i
+    //         }
+    //         }
+    //     return -1;  
+    
+    // }
