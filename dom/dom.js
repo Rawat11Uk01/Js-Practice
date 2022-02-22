@@ -178,3 +178,193 @@
 //     console.log('hello world');
 // },1000);
 // console.log('rawat');
+
+
+
+
+// const heading1 = document.querySelector('.heading1');
+// const heading2 = document.querySelector('.heading2');
+// const heading3 = document.querySelector('.heading3');
+// const heading4 = document.querySelector('.heading4');
+// const heading5 = document.querySelector('.heading5');
+// const heading6 = document.querySelector('.heading6');
+// const heading7 = document.querySelector('.heading7');
+// setTimeout(()=>{
+//     heading1.textContent = 'heading1';
+//     heading1.style.color = 'violet';
+
+//     setTimeout(()=>{
+//         heading2.textContent = 'heading2';
+//     heading2.style.color = 'purple';
+//     setTimeout(()=>{
+//         heading3.textContent = 'heading3';
+//     heading3.style.color = 'red';
+//     setTimeout(()=>{
+//         heading4.textContent = 'heading4';
+//     heading4.style.color = 'pink';
+//     setTimeout(()=>{
+//         heading5.textContent = 'heading5';
+//     heading5.style.color = 'green';
+//     setTimeout(()=>{
+//         heading6.textContent = 'heading6';
+//     heading6.style.color = 'blue';
+//     setTimeout(()=>{
+//         heading7.textContent = 'heading7';
+//     heading7.style.color = 'brown';
+    
+//     },1000);
+//     },3000);
+//     },2000);
+//     },1000);
+    
+//     },2000);
+//     },2000);
+    
+// },1000) ;
+
+// const heading1 = document.querySelector('.heading1');
+// const heading2 = document.querySelector('.heading2');
+// const heading3 = document.querySelector('.heading3');
+// const heading4 = document.querySelector('.heading4');
+// const heading5 = document.querySelector('.heading5');
+// const heading6 = document.querySelector('.heading6');
+// const heading7 = document.querySelector('.heading7');
+// function changeText(element, text, color, time, onSuccessCallback, onfailiureCallback){
+//     setTimeout(()=>{
+//         if(element){
+//             element.textContent = text;
+//             element.style.color = color;
+            
+//             if(onSuccessCallback){
+//                 onSuccessCallback();
+//             }
+//         }else{
+//             if(onfailiureCallback){
+//                 onfailiureCallback();
+//             }
+//         }
+//     },time)
+// };
+// changeText(heading1, 'one', 'green', 1000,()=>{
+//     changeText(heading2, 'two', 'purple', 2000,()=>{
+//         changeText(heading3, 'three', 'red', 3000,()=>{
+
+//         },()=>{
+//             console.log('h3 does not exist')
+//         })
+//     },()=>{
+//         console.log('h2 does not exist')
+//     })
+// },()=>{
+//     console.log('h1 does not exist')
+// })
+
+// const heading1 = document.querySelector('.heading1');
+// const heading2 = document.querySelector('.heading2');
+// const heading3 = document.querySelector('.heading3');
+// const heading4 = document.querySelector('.heading4');
+// const heading5 = document.querySelector('.heading5');
+// const heading6 = document.querySelector('.heading6');
+// const heading7 = document.querySelector('.heading7');
+
+// function changeText(element,text,color,time,onSuccessCallback,onfailiureCallback){
+//     setInterval(()=>{
+//         if(element){
+//             element.textContent = text;
+//         element.style.color = color;
+//         if(onSuccessCallback){
+//             onSuccessCallback();
+//         }
+//         }else{
+//             if(onfailiureCallback){
+//                 onfailiureCallback();
+//             }
+//         }
+        
+//     },time)
+// }
+// changeText(heading1,'one','yellow',1000,()=>{
+//     changeText(heading2,'two','purple',2000,()=>{
+
+//     },()=>{
+//         console.log('your element dose not do shit')
+//     })
+// },()=>{
+//     console.log('your element dose not do shit')
+// })
+
+// const bucket = ['coffee', 'chips', 'vegetables', 'salt', 'rice'];
+
+// const friedRicePromise =new Promise((resolve,reject)=>{
+// if(bucket.includes('vegetables') && bucket.includes("salt") && bucket.includes('rice')){
+//     resolve('fried rice')
+// }else{
+//     reject('could not do it')
+// }
+// });
+
+// friedRicePromise.then((myFriedRice)=>{
+// console.log('lets eat it', myFriedRice);
+// },((error)=>{
+// console.log(error)
+// }))
+
+// function myPromise(){
+//     return new Promise((resolve,reject)=>{
+//         const value = true;
+//         setTimeout(()=>{
+//             if(value){
+//                 resolve();
+//             }else{
+//                 reject();
+//             }
+//         },2000)
+//     })
+// }
+// myPromise().then(()=>{
+//     console.log('resolved')
+// }).catch(()=>{
+//     console.log('rejected')
+// })
+
+// function newP(){
+//    return new Promise((resolve,reject)=>{
+// resolve('foo')
+// });
+// };
+// newP().then((value)=>{
+// console.log(value);
+// return value+= "bar";
+// }).then((value)=>{
+// console.log(value)
+// })
+
+
+
+// const heading1 = document.querySelector('.heading1');
+// const heading2 = document.querySelector('.heading2');
+// const heading3 = document.querySelector('.heading3');
+// const heading4 = document.querySelector('.heading4');
+// const heading5 = document.querySelector('.heading5');
+// const heading6 = document.querySelector('.heading6');
+// const heading7 = document.querySelector('.heading7');
+
+// function changeText(element,text,color,time){
+//     return new Promise((resolve,reject)=>{
+//         setInterval(()=>{
+//             if(element){
+//             element.textContent = text;
+//             element.style.color = color;
+//             resolve();
+//             }else{
+//                 reject();
+//                 }
+//             },time);
+//     })
+   
+        
+//     };
+
+// changeText(heading1,"one","yellow",1000)
+// .then(()=>changeText(heading2,"two","white",1000))
+// .then(()=>changeText(heading3,"three","blue",1000))
