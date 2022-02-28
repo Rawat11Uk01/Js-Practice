@@ -348,6 +348,16 @@
 // );
 // console.log(userCart);
 
+// const userCart = [
+//     {productId:1, ProductName: "mobile", price:2000},
+//     {productId:2, ProductName: "tv", price:4000},
+//     {productId:3, ProductName: "headPhone", price:6000},
+// ];
+// const total = userCart.reduce((current,element)=>{
+//     reduce account += element.price;
+// },0)
+// console.log(total)
+
 const numbers = [1,2,3,4,5,8,4,2,7];
 const newNum = numbers.some((num)=> num%2==0);
 console.log(newNum);
@@ -364,3 +374,31 @@ for(let numbers of number){
     console.log(numbers)
 }
 console.log(number)
+
+
+// / block scope vs function scope 
+
+
+// let and const are block scope
+// var is function scope 
+
+// if(true){
+//     var firstName = "harshit";
+//     console.log(firstName);
+// }
+
+// console.log(firstName);
+
+function myApp(){
+    if(true){
+        var firstName = "harshit";
+        console.log(firstName);
+    }
+
+    if(true){
+        console.log(firstName);
+    }
+    console.log(firstName);
+}
+
+myApp();
