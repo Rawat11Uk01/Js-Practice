@@ -402,3 +402,33 @@ function myApp(){
 }
 
 myApp();
+
+let bioData = {
+        myName : {
+            realName : "vinod thapa",
+            channelName : 'thapa technical'
+        },
+        // things to remember is that the myName is the key and the object is act like a value 
+        myAge : 26,
+        getData (){
+          console.log(`My name is ${this.myName.channelName} and my age is ${this.myAge} `);
+        }
+      }
+    
+      bioData.getData();
+
+
+      const fun2 = () => {
+          setTimeout(()=> {
+              console.log(`Function 2️⃣  is called`);
+          }, 2000);
+        }
+        
+        const fun1 = () => {
+          console.log(`Function 1 is called`);
+          fun2();
+          console.log(`Function 1 is called Again ✌`);
+        }
+        
+        fun1();
+        
