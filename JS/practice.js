@@ -358,22 +358,22 @@
 // },0)
 // console.log(total)
 
-const numbers = [1,2,3,4,5,8,4,2,7];
-const newNum = numbers.some((num)=> num%2==0);
-console.log(newNum);
-const number = new Set();
-number.add(22);
-number.add([1,2,34])
-number.add([1,2,34])
-number.add(22);
-number.add(23);
-number.add(24);
-number.add(25);number.add(22);
-number.add(26);
-for(let numbers of number){
-    console.log(numbers)
-}
-console.log(number)
+// const numbers = [1,2,3,4,5,8,4,2,7];
+// const newNum = numbers.some((num)=> num%2==0);
+// console.log(newNum);
+// const number = new Set();
+// number.add(22);
+// number.add([1,2,34])
+// number.add([1,2,34])
+// number.add(22);
+// number.add(23);
+// number.add(24);
+// number.add(25);number.add(22);
+// number.add(26);
+// for(let numbers of number){
+//     console.log(numbers)
+// }
+// console.log(number)
 
 
 // / block scope vs function scope 
@@ -389,46 +389,76 @@ console.log(number)
 
 // console.log(firstName);
 
-function myApp(){
-    if(true){
-        var firstName = "harshit";
-        console.log(firstName);
-    }
+// function myApp(){
+//     if(true){
+//         var firstName = "harshit";
+//         console.log(firstName);
+//     }
 
-    if(true){
-        console.log(firstName);
-    }
-    console.log(firstName);
-}
+//     if(true){
+//         console.log(firstName);
+//     }
+//     console.log(firstName);
+// }
 
-myApp();
+// myApp();
 
-let bioData = {
-        myName : {
-            realName : "vinod thapa",
-            channelName : 'thapa technical'
-        },
-        // things to remember is that the myName is the key and the object is act like a value 
-        myAge : 26,
-        getData (){
-          console.log(`My name is ${this.myName.channelName} and my age is ${this.myAge} `);
-        }
-      }
+// let bioData = {
+//         myName : {
+//             realName : "vinod thapa",
+//             channelName : 'thapa technical'
+//         },
+//         // things to remember is that the myName is the key and the object is act like a value 
+//         myAge : 26,
+//         getData (){
+//           console.log(`My name is ${this.myName.channelName} and my age is ${this.myAge} `);
+//         }
+//       }
     
-      bioData.getData();
+//       bioData.getData();
 
 
-      const fun2 = () => {
-          setTimeout(()=> {
-              console.log(`Function 2️⃣  is called`);
-          }, 2000);
+//       const fun2 = () => {
+//           setTimeout(()=> {
+//               console.log(`Function 2️⃣  is called`);
+//           }, 2000);
+//         }
+        
+//         const fun1 = () => {
+//           console.log(`Function 1 is called`);
+//           fun2();
+//           console.log(`Function 1 is called Again ✌`);
+//         }
+        
+//         fun1();
+        
+
+
+
+const URL = "https://jsonplaceholder.typicode.com/postssss";
+
+fetch(URL,{
+    method: 'POST',
+    body: JSON.stringify({
+        title: 'foo',
+        body: 'bar',
+        userId: 1,
+    }),
+    headers: {
+        'Content-type': 'application/json; charset=UTF-8',
+    },
+    })
+    .then(response =>{
+        if(response.ok){
+            return response.json()
+        }else{
+            throw new Error("Something went wrong!!!")
         }
-        
-        const fun1 = () => {
-          console.log(`Function 1 is called`);
-          fun2();
-          console.log(`Function 1 is called Again ✌`);
-        }
-        
-        fun1();
-        
+    })
+    .then(data =>{
+        console.log(data);
+    })
+    .catch(error =>{
+        console.log("inside catch");
+        console.log(error);
+    })
