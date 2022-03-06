@@ -542,24 +542,70 @@
 
 // function returning promise
 
-function ricePromise(){
-    const bucket = ['coffee', 'chips','vegetables','salts','rice'];
-    return new Promise((resolve,reject)=>{
-      if(bucket.includes("vegetables")&& bucket.includes("salt") && bucket.includes("rice")){
-          resolve({value:"friedrice"});
-      }else{
-          reject("could not do it");
-      }
-    })
-  }
+// function ricePromise(){
+//     const bucket = ['coffee', 'chips','vegetables','salts','rice'];
+//     return new Promise((resolve,reject)=>{
+//       if(bucket.includes("vegetables")&& bucket.includes("salt") && bucket.includes("rice")){
+//           resolve({value:"friedrice"});
+//       }else{
+//           reject("could not do it");
+//       }
+//     })
+//   }
   
   
-  ricePromise().then(
+//   ricePromise().then(
     // jab promise resolve hoga 
-    (myfriedRice)=>{
-    console.log("lets eat ", myfriedRice);
+    // (myfriedRice)=>{
+    // console.log("lets eat ", myfriedRice);
+    // }
+    // ).catch(
+    // (error)=>{
+    //     console.log(error)
+    // })
+
+    // async await
+
+// fetch(URL)
+//     .then(response => {
+//         return response.json()
+//     })
+//     .then(data => {
+//         console.log(data);
+//     })
+console.log("script start");
+const URL = "https://jsonplaceholder.typicode.com/posts";
+
+// async function getPosts(){
+//     const response = await fetch(URL);
+//     if(!response.ok){
+//         throw new Error("Something went wrong")
+//     }
+//     const data = await response.json();
+//     return data;
+// }
+
+
+const getPosts = async() =>{
+    const response = await fetch(URL);
+    if(!response.ok){
+        throw new Error("Something went wrong")
     }
-    ).catch(
-    (error)=>{
-        console.log(error)
+    const data = await response.json();
+    return data;
+}
+
+// const myData = getPosts();
+// console.log(myData);
+
+getPosts()
+    .then((myData) => {
+        console.log(myData);
     })
+    .catch(error =>{
+        console.log("inside catch")
+        console.log(error);
+    })
+
+
+console.log("script end ");
