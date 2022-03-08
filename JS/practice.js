@@ -573,8 +573,8 @@
 //     .then(data => {
 //         console.log(data);
 //     })
-console.log("script start");
-const URL = "https://jsonplaceholder.typicode.com/posts";
+// console.log("script start");
+// const URL = "https://jsonplaceholder.typicode.com/posts";
 
 // async function getPosts(){
 //     const response = await fetch(URL);
@@ -586,29 +586,29 @@ const URL = "https://jsonplaceholder.typicode.com/posts";
 // }
 
 
-const getPosts = async() =>{
-    const response = await fetch(URL);
-    if(!response.ok){
-        throw new Error("Something went wrong")
-    }
-    const data = await response.json();
-    return data;
-}
+// const getPosts = async() =>{
+//     const response = await fetch(URL);
+//     if(!response.ok){
+//         throw new Error("Something went wrong")
+//     }
+//     const data = await response.json();
+//     return data;
+// }
 
 // const myData = getPosts();
 // console.log(myData);
 
-getPosts()
-    .then((myData) => {
-        console.log(myData);
-    })
-    .catch(error =>{
-        console.log("inside catch")
-        console.log(error);
-    })
+// getPosts()
+//     .then((myData) => {
+//         console.log(myData);
+//     })
+//     .catch(error =>{
+//         console.log("inside catch")
+//         console.log(error);
+//     })
 
 
-console.log("script end ");
+// console.log("script end ");
 
 // Promise.resolve
 // Promise chaining
@@ -623,24 +623,34 @@ console.log("script end ");
 // then method hamesha promise return karta hai
 
 
-function myPromise(){
-    return new Promise((resolve, reject)=>{
-      resolve("foo");
-    })
-  }
+// function myPromise(){
+//     return new Promise((resolve, reject)=>{
+//       resolve("foo");
+//     })
+//   }
   
-  myPromise()
-    .then((value)=>{
-      console.log(value);
-      value += "bar";
-      return value
-    })
-    .then((value) =>{
-      console.log(value);
-      value += "baaz";
-      return value;
-    })
-    .then(value=>{
-      console.log(value);
-    })
+//   myPromise()
+//     .then((value)=>{
+//       console.log(value);
+//       value += "bar";
+//       return value
+//     })
+//     .then((value) =>{
+//       console.log(value);
+//       value += "baaz";
+//       return value;
+//     })
+//     .then(value=>{
+//       console.log(value);
+//     })
   
+
+var age = 17;
+if(age >= 18){
+  console.log("you are eligible to vote");
+}else{
+  console.log("you are not eligible to vote");
+}
+
+var age = 18;
+console.log((age >= 18) ? "you can vote" : "you can't vote");
