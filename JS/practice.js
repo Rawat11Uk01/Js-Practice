@@ -688,3 +688,14 @@
 //   default:
 //     console.log("please enter valid data");
 // }   
+// 4 subj = 1sub= 7
+// 3dubj = [5,6,2]
+
+// let arr = [5,6,2];
+
+// let sum = arr.reduce((accumulator, curElem) => {
+//         debugger;
+//       return accumulator += curElem;
+// },7)
+// console.log(sum);
+
