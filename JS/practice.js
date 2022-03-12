@@ -731,3 +731,13 @@ console.log(arr.flat(Infinity));
 // calculator(5,2,subs)
 
 // console.log(calculator(5,2,subs));
+
+
+// const animals = ['pigs', 'goats', 'sheep'];
+
+// const count = animals.unshift('chicken');
+// console.log(count);
+// console.log(animals);
+
+// animals.unshift('chicken', 'cats','cow');
+// console.log(animals);
