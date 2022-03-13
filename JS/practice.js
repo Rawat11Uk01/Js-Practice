@@ -741,3 +741,35 @@ console.log(arr.flat(Infinity));
 
 // animals.unshift('chicken', 'cats','cow');
 // console.log(animals);
+
+
+
+// Array.prototype.push() 🙋‍♂️
+// The push() method adds one or more elements to the 
+// end of an array and returns the new length of the array.
+
+// const animals = ['pigs', 'goats', 'sheep'];
+
+// // const count = animals.push('chicken');
+// // console.log(count);
+
+// animals.push('chicken', 'cats','cow');
+// console.log(animals);
+
+
+// Array.prototype.unshift() 🙋‍♂️
+// The unshift() method adds one or more elements to the 
+// beginning of an array and returns the new length of the array.
+
+
+
+// const animals = ['pigs', 'goats', 'sheep'];
+
+// const count = animals.unshift('chicken');
+// console.log(count);
+// console.log(animals);
+
+// animals.unshift('chicken', 'cats','cow');
+// console.log(animals);
+
+
