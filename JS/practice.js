@@ -113,7 +113,6 @@
 //     age:12,
 //     love: 16,
 
-
 // };
 // const bandName =band.bandName;
 // const famousSong = band.famousSong;
@@ -125,49 +124,48 @@
 //     {firstName:'kashish', age: 12, gender:'male'},
 //     {firstName:'rawat', age: 34, gender:'male'},
 //     {firstName:'negi', age: 43, gender:'male'}];
-    // for(let array of arr){
-    //     console.log(array.firstName);
-    // }
-    // let [{age}, , {gender}] = arr;
-    // console.log(gender);
-    // function fun(a){
-    //    return a%2===0;
-    // }
-    // console.log(fun(6));
-    // function a(d){
-    //     return d.slice(0,1);
-    // }
-    // console.log(a('love'));
-    // let fun=(a,b)=>{
-    //     for(let i=0; i<a.length; i++){
-    //         if(a[i]===b){
-    //             return i
-    //         }
-    //         }
-    //     return -1;  
-    
-    // }
-        
-    
-    // console.log(fun([0,1,2,6],6));
+// for(let array of arr){
+//     console.log(array.firstName);
+// }
+// let [{age}, , {gender}] = arr;
+// console.log(gender);
+// function fun(a){
+//    return a%2===0;
+// }
+// console.log(fun(6));
+// function a(d){
+//     return d.slice(0,1);
+// }
+// console.log(a('love'));
+// let fun=(a,b)=>{
+//     for(let i=0; i<a.length; i++){
+//         if(a[i]===b){
+//             return i
+//         }
+//         }
+//     return -1;
 
-    // function fun(a,b=0){
-    
-    //     return a+b;
-    // }
-    // console.log(fun(5,6))
+// }
 
-    // function fun(a,b,...c){
-    //     console.log(`a is ${a}`);
-    //     console.log(`b is ${b}`);
-    //     console.log(`c is ${c}`);
-    // }
-    // fun(1,2,3,4,5,6,7);
+// console.log(fun([0,1,2,6],6));
+
+// function fun(a,b=0){
+
+//     return a+b;
+// }
+// console.log(fun(5,6))
+
+// function fun(a,b,...c){
+//     console.log(`a is ${a}`);
+//     console.log(`b is ${b}`);
+//     console.log(`c is ${c}`);
+// }
+// fun(1,2,3,4,5,6,7);
 //     function addAll(...numbers){
 //         let total =0;
 //   for(let number of numbers){
 //      total = total + number;
-     
+
 //   }return total
 //     }
 //     console.log(addAll(1,23,4,53,2,23,4));
@@ -195,7 +193,7 @@
 // }
 // for(let i=0 ; i< numbers.length; i++){
 //     fun(numbers[i], i);
-    
+
 //     }
 // numbers.forEach(fun);'
 
@@ -233,7 +231,6 @@
 // function mul(element, index){
 // console.log(`${index} and ${element}*2 =${element*2}`)
 
-    
 // }
 
 // for(let i=0; i<array.length; i++){
@@ -289,9 +286,9 @@
 // ];
 // let total = 0;
 // for(let i=0; i<userCart.length; i++){
-    
+
 //     total = total + userCart[i].price;
-    
+
 // }
 // console.log(total)
 // const total =userCart.reduce((accumulater,element)=>{
@@ -335,7 +332,6 @@
 
 // console.log(userId)
 
-
 // const products = [
 //     {productId: 1, productName: 'tv', price:200},
 //     {productId: 2, productName: 'mobile', price:100},
@@ -375,12 +371,10 @@
 // }
 // console.log(number)
 
-
-// / block scope vs function scope 
-
+// / block scope vs function scope
 
 // let and const are block scope
-// var is function scope 
+// var is function scope
 
 // if(true){
 //     var firstName = "harshit";
@@ -408,32 +402,28 @@
 //             realName : "vinod thapa",
 //             channelName : 'thapa technical'
 //         },
-//         // things to remember is that the myName is the key and the object is act like a value 
+//         // things to remember is that the myName is the key and the object is act like a value
 //         myAge : 26,
 //         getData (){
 //           console.log(`My name is ${this.myName.channelName} and my age is ${this.myAge} `);
 //         }
 //       }
-    
-//       bioData.getData();
 
+//       bioData.getData();
 
 //       const fun2 = () => {
 //           setTimeout(()=> {
 //               console.log(`Function 2️⃣  is called`);
 //           }, 2000);
 //         }
-        
+
 //         const fun1 = () => {
 //           console.log(`Function 1 is called`);
 //           fun2();
 //           console.log(`Function 1 is called Again ✌`);
 //         }
-        
+
 //         fun1();
-        
-
-
 
 // const URL = "https://jsonplaceholder.typicode.com/postssss";
 
@@ -463,7 +453,7 @@
 //         console.log(error);
 //     })
 
-    // async await
+// async await
 
 // fetch(URL)
 //     .then(response => {
@@ -483,7 +473,6 @@
 //     const data = await response.json();
 //     return data;
 // }
-
 
 // const getPosts = async() =>{
 //     const response = await fetch(URL);
@@ -505,7 +494,6 @@
 //         console.log("inside catch")
 //         console.log(error);
 //     })
-
 
 // console.log("script end ");
 
@@ -532,13 +520,12 @@
 // }
 
 // class Dog extends Animal{
-    
-// } 
+
+// }
 
 // const tommy = new Dog("tommy", 3);
 // console.log(tommy);
 // console.log(tommy.isCute());
-
 
 // function returning promise
 
@@ -552,19 +539,18 @@
 //       }
 //     })
 //   }
-  
-  
-//   ricePromise().then(
-    // jab promise resolve hoga 
-    // (myfriedRice)=>{
-    // console.log("lets eat ", myfriedRice);
-    // }
-    // ).catch(
-    // (error)=>{
-    //     console.log(error)
-    // })
 
-    // async await
+//   ricePromise().then(
+// jab promise resolve hoga
+// (myfriedRice)=>{
+// console.log("lets eat ", myfriedRice);
+// }
+// ).catch(
+// (error)=>{
+//     console.log(error)
+// })
+
+// async await
 
 // fetch(URL)
 //     .then(response => {
@@ -584,7 +570,6 @@
 //     const data = await response.json();
 //     return data;
 // }
-
 
 // const getPosts = async() =>{
 //     const response = await fetch(URL);
@@ -607,7 +592,6 @@
 //         console.log(error);
 //     })
 
-
 // console.log("script end ");
 
 // Promise.resolve
@@ -618,17 +602,15 @@
 //   console.log(value);
 // })
 
-
 // then()
 // then method hamesha promise return karta hai
-
 
 // function myPromise(){
 //     return new Promise((resolve, reject)=>{
 //       resolve("foo");
 //     })
 //   }
-  
+
 //   myPromise()
 //     .then((value)=>{
 //       console.log(value);
@@ -643,7 +625,6 @@
 //     .then(value=>{
 //       console.log(value);
 //     })
-  
 
 // var age = 17;
 // if(age >= 18){
@@ -654,7 +635,6 @@
 
 // var age = 18;
 // console.log((age >= 18) ? "you can vote" : "you can't vote");
-
 
 // var area = "square" ;
 // var PI = 3.142, l=5, b=4, r=3;
@@ -673,7 +653,7 @@
 // var PI = 3.142, l=5, b=4, r=3;
 
 // switch(area){
-//   case 'circle': 
+//   case 'circle':
 //     console.log("the area of the circle is : " + PI*r**2);
 //     break;
 
@@ -687,7 +667,7 @@
 
 //   default:
 //     console.log("please enter valid data");
-// }   
+// }
 // 4 subj = 1sub= 7
 // 3dubj = [5,6,2]
 
@@ -706,7 +686,7 @@
 //         ['zone_7', ['zone_7', ['zone_7', 'zone_8']]]
 //     ];
 
-// let flatArr = arr.reduce((accum, currVal)  => { 
+// let flatArr = arr.reduce((accum, currVal)  => {
 //           return accum.concat(currVal);
 // })
 
@@ -732,7 +712,6 @@
 
 // console.log(calculator(5,2,subs));
 
-
 // const animals = ['pigs', 'goats', 'sheep'];
 
 // const count = animals.unshift('chicken');
@@ -742,10 +721,8 @@
 // animals.unshift('chicken', 'cats','cow');
 // console.log(animals);
 
-
-
-// Array.prototype.push() 
-// The push() method adds one or more elements to the 
+// Array.prototype.push()
+// The push() method adds one or more elements to the
 // end of an array and returns the new length of the array.
 
 // const animals = ['pigs', 'goats', 'sheep'];
@@ -756,12 +733,9 @@
 // animals.push('chicken', 'cats','cow');
 // console.log(animals);
 
-
-// Array.prototype.unshift() 
-// The unshift() method adds one or more elements to the 
+// Array.prototype.unshift()
+// The unshift() method adds one or more elements to the
 // beginning of an array and returns the new length of the array.
-
-
 
 // const animals = ['pigs', 'goats', 'sheep'];
 
@@ -772,7 +746,6 @@
 // animals.unshift('chicken', 'cats','cow');
 // console.log(animals);
 
-
 // function myFunc(callback){
 //     console.log("my function is doing some task")
 //    callback();
@@ -782,15 +755,49 @@
 // }
 // myFunc(myFunc2);
 
+// function getTwoNumAndAdd(number1,number2, callback){
+//   console.log(number1, number2);
+//   callback(number1,number2);
+// }
 
+// function twoNum(num1, num2){
+// console.log(num1+num2)
+// }
 
-function getTwoNumAndAdd(number1,number2, callback){
-  console.log(number1, number2);
-  callback(number1,number2);
-}
+// getTwoNumAndAdd(2,4,twoNum);
 
-function twoNum(num1, num2){
-console.log(num1+num2)
-}
-
-getTwoNumAndAdd(2,4,twoNum);
+const heading1 = document.querySelector(".heading1");
+const heading2 = document.querySelector(".heading2");
+const heading3 = document.querySelector(".heading3");
+const heading4 = document.querySelector(".heading4");
+const heading5 = document.querySelector(".heading5");
+const heading6 = document.querySelector(".heading6");
+const heading7 = document.querySelector(".heading7");
+setTimeout(() => {
+  heading1.textContent = "one";
+  heading1.style.color = "violet";
+  setTimeout(() => {
+    heading2.textContent = "two";
+    heading2.style.color = "red";
+    setTimeout(() => {
+      heading3.textContent = "three";
+      heading3.style.color = "purple";
+      setTimeout(() => {
+        heading4.textContent = "four";
+        heading4.style.color = "pink";
+        setTimeout(() => {
+          heading5.textContent = "five";
+          heading5.style.color = "green";
+          setTimeout(() => {
+            heading6.textContent = "six";
+            heading6.style.color = "blue";
+            setTimeout(() => {
+              heading7.textContent = "seven";
+              heading7.style.color = "brown";
+            }, 1000);
+          }, 3000);
+        }, 2000);
+      }, 1000);
+    }, 2000);
+  }, 2000);
+}, 1000);
