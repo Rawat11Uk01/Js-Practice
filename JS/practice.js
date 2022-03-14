@@ -994,3 +994,29 @@
 //     console.log('inside catch');
 //     console.log(error);
 // })
+
+
+////////////////////////// async await///////////////////
+
+// const url = 'https://jsonplaceholder.typicode.com/posts';
+
+// fetch(url).then((response)=>
+// response.json()
+// ).then((data)=>
+//    console.log(data)
+   
+// )
+
+const url = 'https://jsonplaceholder.typicode.com/posts';
+
+async function getData(){
+      const response = await fetch(url);  
+    //   console.log(response)
+      const data = await response.json();
+    //   console.log(data)
+    return data;
+}
+
+getData().then((myData)=>{
+   console.log(myData)
+})
