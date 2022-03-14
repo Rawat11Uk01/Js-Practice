@@ -699,18 +699,18 @@
 // },7)
 // console.log(sum);
 
-const arr = [
-        ['zone_1', 'zone_2'],
-        ['zone_3', 'zone_4'],
-        ['zone_5', 'zone_6'],
-        ['zone_7', ['zone_7', ['zone_7', 'zone_8']]]
-    ];
+// const arr = [
+//         ['zone_1', 'zone_2'],
+//         ['zone_3', 'zone_4'],
+//         ['zone_5', 'zone_6'],
+//         ['zone_7', ['zone_7', ['zone_7', 'zone_8']]]
+//     ];
 
 // let flatArr = arr.reduce((accum, currVal)  => { 
 //           return accum.concat(currVal);
 // })
 
-console.log(arr.flat(Infinity));
+// console.log(arr.flat(Infinity));
 
 // const add = (a,b) => {
 //     return a+b;
@@ -744,7 +744,7 @@ console.log(arr.flat(Infinity));
 
 
 
-// Array.prototype.push() 🙋‍♂️
+// Array.prototype.push() 
 // The push() method adds one or more elements to the 
 // end of an array and returns the new length of the array.
 
@@ -757,7 +757,7 @@ console.log(arr.flat(Infinity));
 // console.log(animals);
 
 
-// Array.prototype.unshift() 🙋‍♂️
+// Array.prototype.unshift() 
 // The unshift() method adds one or more elements to the 
 // beginning of an array and returns the new length of the array.
 
@@ -773,3 +773,11 @@ console.log(arr.flat(Infinity));
 // console.log(animals);
 
 
+function myFunc(callback){
+    console.log("my function is doing some task")
+   callback();
+}
+ function myFunc2(){
+    console.log("my function is doing some task 2")
+}
+myFunc(myFunc2);
