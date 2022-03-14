@@ -774,18 +774,35 @@ const heading5 = document.querySelector(".heading5");
 const heading6 = document.querySelector(".heading6");
 const heading7 = document.querySelector(".heading7");
 
-function changeText(elem, text, color, time){
+function changeText(elem , text, color,time,onsuccesCallback,onFailureCallback){
+setTimeout(()=>{
     if(elem){
-        setTimeout(()=>{
-            elem.textContent = text;
-            elem.style.color  = color;
-            },time);
+        elem.textContent = text;
+        elem.style.color = color;
+        if(onsuccesCallback){
+            onsuccesCallback();
+        }
+       
     }else{
-        console.log('element not found')
-    }
+        if(onFailureCallback){
+            onFailureCallback();
+        }
+    
+    };
 
+},time)
 }
-changeText(heading1,'one','violet',1000);
+changeText(heading1, "one", "green", 1000,()=>{
+    changeText(heading2, "two", "red", 1000,()=>{
+     changeText(heading3, 'three', 'white', 1000, ()=>{
+
+     },()=>{
+console.log('headind three dosent exist')
+     })
+    },
+()=>{console.log('heading 2 dosenot exist')});
+},
+()=>{console.log('heading 1 dosenot exist')});
 // setTimeout(() => {
 //   heading1.textContent = "one";
 //   heading1.style.color = "violet";
