@@ -773,11 +773,24 @@
 // console.log(animals);
 
 
-function myFunc(callback){
-    console.log("my function is doing some task")
-   callback();
+// function myFunc(callback){
+//     console.log("my function is doing some task")
+//    callback();
+// }
+//  function myFunc2(){
+//     console.log("my function is doing some task 2")
+// }
+// myFunc(myFunc2);
+
+
+
+function getTwoNumAndAdd(number1,number2, callback){
+  console.log(number1, number2);
+  callback(number1,number2);
 }
- function myFunc2(){
-    console.log("my function is doing some task 2")
+
+function twoNum(num1, num2){
+console.log(num1+num2)
 }
-myFunc(myFunc2);
+
+getTwoNumAndAdd(2,4,twoNum);
