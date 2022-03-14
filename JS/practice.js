@@ -889,33 +889,60 @@
 // )
 
 
-const heading1 = document.querySelector(".heading1");
-const heading2 = document.querySelector(".heading2");
-const heading3 = document.querySelector(".heading3");
-const heading4 = document.querySelector(".heading4");
-const heading5 = document.querySelector(".heading5");
-const heading6 = document.querySelector(".heading6");
-const heading7 = document.querySelector(".heading7");
+// const heading1 = document.querySelector(".heading1");
+// const heading2 = document.querySelector(".heading2");
+// const heading3 = document.querySelector(".heading3");
+// const heading4 = document.querySelector(".heading4");
+// const heading5 = document.querySelector(".heading5");
+// const heading6 = document.querySelector(".heading6");
+// const heading7 = document.querySelector(".heading7");
 
-const changeText = (element, text , color, time)=>{
-return new Promise((resolve,reject)=>{
-    setTimeout(()=>{
-        if(element){
-            element.textContent = text;
-        element.style.color = color;
-        resolve();
-        }else{
-    reject();
-        }
-    },time)
+// const changeText = (element, text , color, time)=>{
+// return new Promise((resolve,reject)=>{
+//     setTimeout(()=>{
+//         if(element){
+//             element.textContent = text;
+//         element.style.color = color;
+//         resolve();
+//         }else{
+//     reject();
+//         }
+//     },time)
   
-})
-}
-changeText(heading1, 'one', 'blue', 1000)
-.then(()=>
-     changeText(heading2, 'two', 'yellow', 1000)
-).then(()=>
-     changeText(heading3, 'three', 'red', 1000)
-).catch(()=>
-    console.log('not found')
-)
+// })
+// }
+// changeText(heading1, 'one', 'blue', 1000)
+// .then(()=>
+//      changeText(heading2, 'two', 'yellow', 1000)
+// ).then(()=>
+//      changeText(heading3, 'three', 'red', 1000)
+// ).catch(()=>
+//     console.log('not found')
+// )
+
+// const URL = 'https://jsonplaceholder.typicode.com/posts';
+// const xhr = new XMLHttpRequest();
+
+// xhr.open("GET",URL);
+// xhr.onload = function(){
+//     if(xhr.status ===200 && xhr.status<300){
+//         const data = JSON.parse(xhr.response);
+//         console.log(data)
+//         const id = data[3].id;
+//         const xhr2 = new XMLHttpRequest();
+//         const url2 = `${URL}/${id}`;
+//         xhr2.open('GET', url2)
+//         xhr2.onload = function(){
+//             const data2 = JSON.parse(xhr2.response);
+//         console.log(data2)
+//         }
+//         xhr2.send();
+//     }else{
+//         console.log('no data found')
+//     }
+
+// }
+// xhr.onerror= ()=>{
+//     console.log('neywork error')
+// }
+// xhr.send();
