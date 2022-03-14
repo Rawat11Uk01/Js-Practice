@@ -766,43 +766,68 @@
 
 // getTwoNumAndAdd(2,4,twoNum);
 
-const heading1 = document.querySelector(".heading1");
-const heading2 = document.querySelector(".heading2");
-const heading3 = document.querySelector(".heading3");
-const heading4 = document.querySelector(".heading4");
-const heading5 = document.querySelector(".heading5");
-const heading6 = document.querySelector(".heading6");
-const heading7 = document.querySelector(".heading7");
+// const heading1 = document.querySelector(".heading1");
+// const heading2 = document.querySelector(".heading2");
+// const heading3 = document.querySelector(".heading3");
+// const heading4 = document.querySelector(".heading4");
+// const heading5 = document.querySelector(".heading5");
+// const heading6 = document.querySelector(".heading6");
+// const heading7 = document.querySelector(".heading7");
 
-function changeText(elem , text, color,time,onsuccesCallback,onFailureCallback){
-setTimeout(()=>{
-    if(elem){
-        elem.textContent = text;
-        elem.style.color = color;
-        if(onsuccesCallback){
-            onsuccesCallback();
-        }
-       
-    }else{
-        if(onFailureCallback){
-            onFailureCallback();
-        }
-    
-    };
-
-},time)
-}
-changeText(heading1, "one", "green", 1000,()=>{
-    changeText(heading2, "two", "red", 1000,()=>{
-     changeText(heading3, 'three', 'white', 1000, ()=>{
-
-     },()=>{
-console.log('headind three dosent exist')
-     })
-    },
-()=>{console.log('heading 2 dosenot exist')});
-},
-()=>{console.log('heading 1 dosenot exist')});
+// function changeText(
+//   elem,
+//   text,
+//   color,
+//   time,
+//   onsuccesCallback,
+//   onFailureCallback
+// ) {
+//   setTimeout(() => {
+//     if (elem) {
+//       elem.textContent = text;
+//       elem.style.color = color;
+//       if (onsuccesCallback) {
+//         onsuccesCallback();
+//       }
+//     } else {
+//       if (onFailureCallback) {
+//         onFailureCallback();
+//       }
+//     }
+//   }, time);
+// }
+// changeText(
+//   heading1,
+//   "one",
+//   "green",
+//   1000,
+//   () => {
+//     changeText(
+//       heading2,
+//       "two",
+//       "red",
+//       1000,
+//       () => {
+//         changeText(
+//           heading3,
+//           "three",
+//           "white",
+//           1000,
+//           () => {},
+//           () => {
+//             console.log("headind three dosent exist");
+//           }
+//         );
+//       },
+//       () => {
+//         console.log("heading 2 dosenot exist");
+//       }
+//     );
+//   },
+//   () => {
+//     console.log("heading 1 dosenot exist");
+//   }
+// );
 // setTimeout(() => {
 //   heading1.textContent = "one";
 //   heading1.style.color = "violet";
@@ -831,3 +856,19 @@ console.log('headind three dosent exist')
 //     }, 2000);
 //   }, 2000);
 // }, 1000);
+
+
+const bucket = ['coffe', 'chips', 'vegetable', 'salt', 'rice'];
+const friedrice = new Promise((resolve, reject)=>{
+    if(bucket.includes('vegetable') && bucket.includes('salt') && bucket.includes('rice') ){
+        resolve('fried')
+    }else{
+        reject('not found')
+    }
+});
+
+friedrice.then((friedrice)=>{
+    console.log('yahooooo')
+}).catch((error)=>{
+    console.log('error')
+})
