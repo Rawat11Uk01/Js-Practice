@@ -947,26 +947,50 @@
 // }
 // xhr.send();
 
-const url = 'https://jsonplaceholder.typicode.com/posts';
+// const url = 'https://jsonplaceholder.typicode.com/posts';
 
-function sendRequest(method,url){
-    return new Promise((resolve, reject)=>{
-        const xhr = new XMLHttpRequest();
-        xhr.open(method,url)
-        xhr.onload = function(){
-            if(xhr.status===200 && xhr.status<300){
-                resolve(xhr.response);
-            }else{
-                reject(new Error('wrong'));
-            }
-            xhr.onerror =function(){
-                reject(new Error('wrong'));
-            }
-        }
-        xhr.send();
-    })
-}
-sendRequest('GET',url).then(a =>{
-    data= JSON.parse(a)
-    console.log(data)
-})
+// function sendRequest(method,url){
+//     return new Promise((resolve, reject)=>{
+//         const xhr = new XMLHttpRequest();
+//         xhr.open(method,url)
+//         xhr.onload = function(){
+//             if(xhr.status===200 && xhr.status<300){
+//                 resolve(xhr.response);
+//             }else{
+//                 reject(new Error('wrong'));
+//             }
+//             xhr.onerror =function(){
+//                 reject(new Error('wrong'));
+//             }
+//         }
+//         xhr.send();
+//     })
+// }
+// sendRequest('GET',url).then(a =>{
+//    const data= JSON.parse(a)
+//     return data;
+// }).then((data)=>{
+//      const id = data[3].id;
+//     return id;
+
+// }).then(()=>{
+//     const url2 = `${url}/${id}`
+// })
+
+
+// const url = 'https://jsonplaceholder.typicode.com/poss';
+
+// fetch(url).then((resolve)=>{
+//     if(resolve.ok){
+//         return resolve.json();
+//     }else{
+//         throw new Error('something went wrong')
+//     }
+    
+// }).then((data)=>{
+// console.log(data)
+// })
+// .catch(error =>{
+//     console.log('inside catch');
+//     console.log(error);
+// })
