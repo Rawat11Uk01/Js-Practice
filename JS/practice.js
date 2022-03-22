@@ -1036,4 +1036,4 @@ const counterSubscriber = ()=>{
   console.log(ltState)
 }
 store.subscribe(counterSubscriber);
-store.dispatch();
+store.dispatch({type:'ok'});
