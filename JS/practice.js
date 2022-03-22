@@ -1007,16 +1007,33 @@
    
 // )
 
-const url = 'https://jsonplaceholder.typicode.com/posts';
+// const url = 'https://jsonplaceholder.typicode.com/posts';
 
-async function getData(){
-      const response = await fetch(url);  
-    //   console.log(response)
-      const data = await response.json();
-    //   console.log(data)
-    return data;
+// async function getData(){
+//       const response = await fetch(url);  
+//     //   console.log(response)
+//       const data = await response.json();
+//     //   console.log(data)
+//     return data;
+// }
+
+// getData().then((myData)=>{
+//    console.log(myData)
+// })
+
+const redux = require('redux');
+
+const counterReducer = (state = {counter:0},action)=>{
+return{
+  couter: state.counter+1,
+};
 }
 
-getData().then((myData)=>{
-   console.log(myData)
-})
+const store = redux.createStore(counterReducer);
+
+const counterSubscriber = ()=>{
+  const ltState= store.getState();
+  console.log(ltState)
+}
+store.subscribe(counterSubscriber);
+store.dispatch();
