@@ -1021,6 +1021,23 @@
 //    console.log(myData)
 // })
 
+// const redux = require('redux');
+
+// const counterReducer = (state = {counter:0},action)=>{
+// return{
+//   couter: state.counter+1,
+// };
+// }
+
+// const store = redux.createStore(counterReducer);
+
+// const counterSubscriber = ()=>{
+//   const ltState= store.getState();
+//   console.log(ltState)
+// }
+// store.subscribe(counterSubscriber);
+// store.dispatch({type:'ok'});
+
 const redux = require('redux');
 
 const counterReducer = (state = {counter:0},action)=>{
