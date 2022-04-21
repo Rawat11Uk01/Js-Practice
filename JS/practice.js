@@ -2614,62 +2614,90 @@
 // JSON.parse("[object Object]")
 // Uncaught SyntaxError: Unexpected token o in JSON at position 1
 
-const actions = {
-    ADD_TODO_ITEM: 'ADD_TODO_ITEM',
-    REMOVE_TODO_ITEM: 'REMOVE_TODO_ITEM',
-    TOGGLE_COMPLETED: 'TOGGLE_COMPLETED',
-}
+// const actions = {
+//     ADD_TODO_ITEM: 'ADD_TODO_ITEM',
+//     REMOVE_TODO_ITEM: 'REMOVE_TODO_ITEM',
+//     TOGGLE_COMPLETED: 'TOGGLE_COMPLETED',
+// }
 
-const ADD_TODO_ITEM = 'ADD_TODO_ITEM';
-const REMOVE_TODO_ITEM = 'REMOVE_TODO_ITEM';
-const TOGGLE_COMPLETED = 'TOGGLE_COMPLETED';
-
-
-const addTodoItem = (data) => {
-    return {
-        type: 'ADD_TODO_ITEM',
-        payload: data,
-    }
-}
-
-const REMOVETODOITEM = (data) => {
-    return {
-        type: 'REMOVE_TODO_ITEM',
-        payload: data,
-    }
-}
-
-const TOGGLECOMPLETED = (data) => {
-    return {
-        type: 'TOGGLE_COMPLETED',
-        payload: data,
-    }
-}
+// const ADD_TODO_ITEM = 'ADD_TODO_ITEM';
+// const REMOVE_TODO_ITEM = 'REMOVE_TODO_ITEM';
+// const TOGGLE_COMPLETED = 'TOGGLE_COMPLETED';
 
 
-const reducer = (state,action)=>{
-    switch(action.type){
-       case ADD_TODO_ITEM : return{
-           ...state,
-           noOflist: action.payload,
-       }
-       default: return state;
-    }
-}
+// const addTodoItem = (data) => {
+//     return {
+//         type: 'ADD_TODO_ITEM',
+//         payload: data,
+//     }
+// }
 
-const ctc = createContext({});
+// const REMOVETODOITEM = (data) => {
+//     return {
+//         type: 'REMOVE_TODO_ITEM',
+//         payload: data,
+//     }
+// }
 
-const ctcProvider = ()=>{
-    const initialstate = {
-        noOfSomething: ''
-    }
-    const [state, dispatch] = useReducer(reducer, initialstate);
-const value = {
-    initialstate: state.payload
-}
+// const TOGGLECOMPLETED = (data) => {
+//     return {
+//         type: 'TOGGLE_COMPLETED',
+//         payload: data,
+//     }
+// }
 
 
-    return <ctc.Provider value={value}>
-        {props.children}
-    </ctc.Provider>
-}
+// const reducer = (state,action)=>{
+//     switch(action.type){
+//        case ADD_TODO_ITEM : return{
+//            ...state,
+//            noOflist: action.payload,
+//        }
+//        default: return state;
+//     }
+// }
+
+// const ctc = createContext({});
+
+// const ctcProvider = ()=>{
+//     const initialstate = {
+//         noOfSomething: ''
+//     }
+//     const [state, dispatch] = useReducer(reducer, initialstate);
+// const value = {
+//     initialstate: state.payload
+// }
+
+
+//     return <ctc.Provider value={value}>
+//         {props.children}
+//     </ctc.Provider>
+// }
+
+
+// function number(a,b){
+//     if(a===100 || b===100 || a+b===100){
+//         return true;
+//     }else{
+//         return false
+//     }
+// }
+
+// console.log(number(100,20))
+
+// import { actions } from "./actionType";
+
+// export const initialState = {
+//     counter: 0
+// }
+// export const reducer = (state=initialState, action)=>{
+//    switch(action.type){
+//        case actions.Increament : return {
+//            state: state.counter + 1
+//        }
+//        case actions.Decreament : return {
+//            state : state.counter -1
+//        }
+//        default: return state
+//    }
+// }
