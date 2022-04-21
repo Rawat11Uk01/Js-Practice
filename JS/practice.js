@@ -2701,3 +2701,42 @@
 //        default: return state
 //    }
 // }
+
+
+// const reducer = (state,action)=>{
+//     switch(action.type){
+//        case ADD_TODO_ITEM : return{
+//            ...state,
+//            noOflist: action.payload,
+//        }
+//        default: return state;
+//     }
+// }
+
+// const ctc = createContext({});
+
+// const ctcProvider = ()=>{
+//     const initialstate = {
+//         noOfSomething: ''
+//     }
+//     const [state, dispatch] = useReducer(reducer, initialstate);
+// const value = {
+//     initialstate: state.payload
+// }
+
+
+//     return <ctc.Provider value={value}>
+//         {props.children}
+//     </ctc.Provider>
+// }
+
+
+// function number(a,b){
+//     if(a===100 || b===100 || a+b===100){
+//         return true;
+//     }else{
+//         return false
+//     }
+// }
+
+// console.log(number(100,20))
