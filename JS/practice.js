@@ -2740,3 +2740,15 @@
 // }
 
 // console.log(number(100,20))
+
+
+
+const lastnamee ='rawat';
+
+const ok = function(){
+    const firstname = 'kashish';
+    console.log(firstname);
+    console.log(lastnamee);
+}
+
+ok();
