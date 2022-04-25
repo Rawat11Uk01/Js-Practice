@@ -393,10 +393,8 @@
 // parentDiv.style.color = 'blue';
 
 
-const li = document.querySelector('.todo-list');
-// const newI = document.createElement('li');
-// newI.textContent = 'text content'
-// li.prepend(newI)
+// const li = document.querySelector('.todo-list');
+// console.log(li.getBoundingClientRect())
 
 // console.log(li);
 
