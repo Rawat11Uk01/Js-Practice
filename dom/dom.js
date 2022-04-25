@@ -408,8 +408,8 @@ const btn = document.querySelectorAll('button');
 
 btn.forEach((a, b) => {
     a.addEventListener('click', function (e) {
-       a.style.background = 'red';
-       a.style.color = 'yellow'
+       e.target.style.background = 'red';
+       e.target.style.color = 'yellow'
     })
 })
 
