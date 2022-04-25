@@ -399,4 +399,16 @@
 // console.log(li);
 
 
+const btn = document.querySelectorAll('button');
+// for(let b of btn){
+//     b.addEventListener('click', function(){
+//         console.log(this.textContent)
+//     })
+// }
+
+btn.forEach((a, b) => {
+    a.addEventListener('click', function () {
+        console.log(this.textContent)
+    })
+})
 
