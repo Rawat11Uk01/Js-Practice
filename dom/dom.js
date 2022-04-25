@@ -407,8 +407,9 @@ const btn = document.querySelectorAll('button');
 // }
 
 btn.forEach((a, b) => {
-    a.addEventListener('click', function () {
-        console.log(this.textContent)
+    a.addEventListener('click', function (e) {
+       a.style.background = 'red';
+       a.style.color = 'yellow'
     })
 })
 
