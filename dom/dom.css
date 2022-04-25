@@ -94,8 +94,24 @@ position: relative;
     text-align: left;
     margin: auto;
 }
+.bg-dark{
+    background-color: black;
+    color: white;
+}
 .signup-form label{
 display: block;
+}
+.todo-list{
+    text-align: left;
+    font-weight: bold;
+    list-style: none;
+
+}
+.todo-list li{
+  padding: 0.7rem;
+  background: #444;
+margin-top: 1rem;
+    
 }
 .signup-form input{
     display: block;

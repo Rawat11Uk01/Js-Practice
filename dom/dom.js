@@ -377,12 +377,28 @@
 // const rootNode = document.getRootNode();
 
 
-const rootElement = document.getRootNode();
-const rootE =rootElement.childNodes[1];
+// const rootElement = document.getRootNode();
+// const rootE =rootElement.childNodes[1];
 
-const childNodes = rootE.childNodes;
+// const childNodes = rootE.childNodes;
 
-console.log(childNodes);
-const headNode = childNodes[0];
-console.log(headNode.nextElementSibling);
+// console.log(childNodes);
+// const headNode = childNodes[0];
+// console.log(headNode.nextElementSibling);
+
+// const heaing = document.querySelector('h1');
+// console.log(heaing.parentNode);
+// const parentDiv = heaing.parentNode.parentNode;
+// parentDiv.style.background = 'red';
+// parentDiv.style.color = 'blue';
+
+
+const li = document.querySelector('.todo-list');
+// const newI = document.createElement('li');
+// newI.textContent = 'text content'
+// li.prepend(newI)
+
+// console.log(li);
+
+
 
