@@ -54,7 +54,7 @@
 // const navItems = document.getElementsByTagName("a");
 // for(let items of navItems){
 //     console.log(items)
-    // const navItem =navItems[i];
+// const navItem =navItems[i];
 //     items.style.backgroundColor = '#fff';
 //     items.style.color = 'green'
 // }
@@ -106,7 +106,7 @@
 // todo1.before(newtodoItem) ;
 // const btnHeadline = document.querySelector('.btn-headline');
 // function rawat(){
-    // console.log('yu huuuuu')
+// console.log('yu huuuuu')
 // }
 // btnHeadline.addEventListener('click', rawat)
 
@@ -211,15 +211,15 @@
 //     setTimeout(()=>{
 //         heading7.textContent = 'heading7';
 //     heading7.style.color = 'brown';
-    
+
 //     },1000);
 //     },3000);
 //     },2000);
 //     },1000);
-    
+
 //     },2000);
 //     },2000);
-    
+
 // },1000) ;
 
 // const heading1 = document.querySelector('.heading1');
@@ -234,7 +234,7 @@
 //         if(element){
 //             element.textContent = text;
 //             element.style.color = color;
-            
+
 //             if(onSuccessCallback){
 //                 onSuccessCallback();
 //             }
@@ -280,7 +280,7 @@
 //                 onfailiureCallback();
 //             }
 //         }
-        
+
 //     },time)
 // }
 // changeText(heading1,'one','yellow',1000,()=>{
@@ -361,10 +361,28 @@
 //                 }
 //             },time);
 //     })
-   
-        
+
+
 //     };
 
 // changeText(heading1,"one","yellow",1000)
 // .then(()=>changeText(heading2,"two","white",1000))
 // .then(()=>changeText(heading3,"three","blue",1000))
+
+
+// const link = document.getElementsByTagName('a');
+// console.log(link)
+
+
+// const rootNode = document.getRootNode();
+
+
+const rootElement = document.getRootNode();
+const rootE =rootElement.childNodes[1];
+
+const childNodes = rootE.childNodes;
+
+console.log(childNodes);
+const headNode = childNodes[0];
+console.log(headNode.nextElementSibling);
+
