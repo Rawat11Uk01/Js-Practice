@@ -399,17 +399,226 @@
 // console.log(li);
 
 
-const btn = document.querySelectorAll('button');
+// const btn = document.querySelectorAll('button');
 // for(let b of btn){
 //     b.addEventListener('click', function(){
 //         console.log(this.textContent)
 //     })
 // }
 
-btn.forEach((a, b) => {
-    a.addEventListener('click', function (e) {
-       e.target.style.background = 'red';
-       e.target.style.color = 'yellow'
-    })
-})
+// btn.forEach((a, b) => {
+//     a.addEventListener('click', function (e) {
 
+//     })
+// })
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// ######## program to swap two numbers##########
+
+
+
+// let a = prompt('enter first number');
+// let b = prompt('enter second number');
+// let c;
+// c=a;
+// a=b;
+// b=c;
+
+// console.log(`the value of firstnum is ${a}`);
+// console.log(`the value of secondnum is ${b}`)
+
+// let a = prompt('enter first number');
+// let b = prompt('enter second number');
+// [a,b]=[b,a]
+
+// console.log(`the value of firstnum is ${a}`);
+// console.log(`the value of secondnum is ${b}`)
+
+
+// let a = parseInt(prompt('enter first number'));
+// let b = parseInt(prompt('enter second number'));
+
+// a = a+b;
+// b= a-b;
+// a= a-b;
+
+// console.log(`the value of firstnum is ${a}`);
+// console.log(`the value of secondnum is ${b}`)
+
+// ######## program to swap two numbers##########
+
+// ##########Fibonacci Sequence##############😀
+
+
+// let x = 0;
+// let y = 1;
+// let fn = x+y;
+
+// console.log(x);
+
+// while(fn<100){
+//     console.log(fn);
+//     x=y;
+//     y=fn;
+//     fn = x+y;
+// }
+
+
+
+
+
+
+// function fb(a){
+//   let fibArr = [0,1];
+//   for(i=2; i<a ; i++){
+//     fibArr.push(fibArr[i-2] + fibArr[i-1]);
+//   }  
+//   return fibArr;
+// }
+
+// console.log(fb(12));
+
+
+
+
+// let a = 0;
+// let b = 1;
+// for (i = 0; i <10; i++) {
+
+//     let c = a + b;
+//     console.log(c)
+//     a = b;
+//     b = c;
+
+// }
+
+
+// ##########Fibonacci Sequence##############
+
+// 2
+
+
+// function yo(a){
+//     let cha = a;
+//     if(cha==='a'|| cha==='e'|| cha==='i'||cha==='o'||cha==='u'){
+//          console.log('hii')
+//     }else{
+//         console.log('okkk')
+//     }
+// }
+
+
+// yo('u');
+
+// 2
+
+
+//########## function currying ########
+
+
+// const getSum = (a) => (b) => (c) => (d) => (e) => console.log(a + b + c + d + e)
+
+
+
+
+// const getSum = (a) => {
+//     return (b) => {
+//         return (c) => {
+//             return (d) => {
+//                 return (e) => {
+//                     console.log(a + b + c + d + e)
+//                 }
+//             }
+//         }
+//     }
+// }
+
+
+
+// getSum(500)(4)(3)(2)(1);
+
+
+
+//########## function currying ########
+
+
+//########### replace all ###########
+
+// let str = 'kasish rawat is the beat rawat';
+// console.log(str.replaceAll('rawat', 'God'));
+// console.log(str);
+
+
+//########### replace all ###########
+
+
+//#######programme to ompare two array are eqal or not########
+
+// let array1 = [1,2,3,4,5,6];
+// let array2 = [6,1,3,4,5,2];
+
+// const is_same = array1.length === array2.length && array1.every((curE)=>{
+//     if(array2.indexOf(curE)>-1){
+//         console.log(array2.indexOf((curE)));
+
+//         return curE = array2[array2.indexOf((curE))]
+//     }
+// })
+// console.log(is_same);
+
+
+//#######programme to ompare two array are eqal or not########
+
+
+
+//  ####programme to remove duplicate in array ##########
+
+// let array1 = [1,2,3,4,5,6,2,4,2,3,4,2,3,4];
+
+// const newN = [...new Set(array1)]
+// console.log(newN)
+
+
+//  ####programme to remove duplicate in array ##########
+
+//  ####programme to reverse string in array ##########
+
+
+// const reverseString = (string) => {
+//     let newStr = '';
+//     for (let i = string.length -1 ; i >= 0;  i--) {
+//         newStr += string[i];
+//     }
+//     console.log(newStr);
+// }
+
+// reverseString('kittu loves everyone')
+
+
+// const reversString = (string) => {
+//   let splitString = string.split('').reverse().join('');
+//  return splitString;
+// }
+
+// console.log(reversString('kittu loves everyone'));
+
+
+//  ####programme to reverse string in array ##########
