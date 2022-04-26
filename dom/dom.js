@@ -621,4 +621,96 @@
 // console.log(reversString('kittu loves everyone'));
 
 
+
+// const reverseL = (a)=>{
+//     let str = a.split('').reverse().join('');
+//      return str;
+// }
+
+// console.log(reverseL('i am kittu'))
+
+
+
+// const reverseL = (a)=>{
+//     let str = a.toString();
+//     let newStr = str.split('').reverse().join('');
+//      return +newStr;
+// }
+
+// console.log(reverseL(7618452940))
+
+
+
+
+
 //  ####programme to reverse string in array ##########
+
+
+
+//########   Programmer to find prime number ##########
+
+// const no = 83;
+
+
+// for(i=2;  i < no ; i++){
+//        if(no%2===0){
+//            console.log('given num is not a prime no')
+//        }
+//        else if(no%i===0){
+//         console.log('given num is not a prime no')
+//        }
+//        else{
+//            console.log('given no is a prime no')
+//        }
+// }
+// function isPrime(num) {
+//     for ( i = 2; i*i <= num; i++)
+//         if (num % i === 0)
+//           return false; 
+//     return num > 1;
+// }
+// console.log(isPrime(5))
+// console.log(isPrime(4))
+//  2, 3, 5, 7, 11, 13, 17, 19, 23, 29, 31, 37, 41, 43, 47, 53, 59, 61, 67, 71, 73, 79, 83, 89, 97.
+
+
+// function isPrime(a) {
+//     for (i = 2; i * i <= a; i++)
+//         if (a % i === 0)
+//             return false;
+//     return a > 1;
+// }
+
+// console.log(isPrime(17));
+
+
+//########   Programmer to find prime number ##########
+
+// const f = (s) => {
+//     let num = 1;
+//     for (i = s; i >= 1; i--) {
+//         num = num * i;
+
+//     }
+//     return (`the factorial of ${s} is ${num} `);
+// }
+
+// console.log(f(5));
+
+
+
+
+//########### union of two arrays###########
+
+
+const num1 = [4, 5, 8];
+const num2 = [1, 2, 3, 4, 5, 8];
+
+
+const getUnion = () => {
+    const num = [...num1, ...num2];
+    const un = [...new Set(num)];
+    console.log(un.sort((a,b)=>b-a));
+}
+
+getUnion();
