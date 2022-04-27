@@ -703,14 +703,38 @@
 //########### union of two arrays###########
 
 
-const num1 = [4, 5, 8];
-const num2 = [1, 2, 3, 4, 5, 8];
+// const num1 = [4, 5, 8];
+// const num2 = [1, 2, 3, 4, 5, 8];
 
 
-const getUnion = () => {
-    const num = [...num1, ...num2];
-    const un = [...new Set(num)];
-    console.log(un.sort((a,b)=>b-a));
+// const getUnion = () => {
+//     const num = [...num1, ...num2];
+//     const un = [...new Set(num)];
+//     console.log(un.sort((a,b)=>b-a));
+// }
+
+// getUnion();
+
+//########### union of two arrays###########
+
+
+// ###### intersection of two arrays ###########
+
+// let i = 1;
+// function  x(){
+//     setTimeout(function(){
+//         console.log(i);
+//     },1000);
+    
+// }
+
+// x();
+
+
+function coin(a,b,...c){
+    console.log(a,b,c)
 }
 
-getUnion();
+coin(1,2,3,4,5,6,7,8,9)
+
+// ###### intersection of two arrays ###########
