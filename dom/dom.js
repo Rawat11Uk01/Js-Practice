@@ -1031,3 +1031,25 @@
 // obj1.address.love = 'Ranikhet'
 // console.log(obj1);
 // console.log(obj2);
+
+
+// ok = 'okk';
+
+// console.log(ok);
+
+// var ok;
+
+// {var x =5 };
+
+// console.log(x)
+
+ function one(name,age){
+    this.name= name
+    this.age= age
+    this.about = function func(){
+        console.log(name)
+    }
+}
+
+const first = new one('kashish', 12);
+console.log(first.about())
