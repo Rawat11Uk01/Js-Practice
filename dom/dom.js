@@ -1043,13 +1043,31 @@
 
 // console.log(x)
 
- function one(name,age){
-    this.name= name
-    this.age= age
-    this.about = function func(){
-        console.log(name)
-    }
-}
 
-const first = new one('kashish', 12);
-console.log(first.about())
+// function ok(a,b,c,e,f,g,h,i){
+// console.log(a,b,c,e,f,g,h,i)
+// }
+
+
+// let four  = [1,23,32,33,3232,32323,32,4,5,6,1,2,3];
+// ok(...four)
+
+// function* genFunc(){
+//     yield 3;
+//     yield 4;
+// }
+// console.log(genFunc().next());
+// console.log(genFunc().next());
+
+
+// function func(){
+//     for(i=0; i<3;i++){
+//         setTimeout(()=>{
+//        console.log(i)
+//         },2000)
+//     }
+// }
+// func();
+let a = 5;
+let x = ++a;
+console.log(a)
