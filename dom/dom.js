@@ -1068,6 +1068,17 @@
 //     }
 // }
 // func();
-let a = 5;
-let x = ++a;
-console.log(a)
+// let a = 5;
+// let x = ++a;
+// console.log(a)
+
+
+// let str = '13km';
+// console.log(str.slice(0,2));
+
+
+
+const arr = [1,2,3,4,5,6];
+
+console.log(arr.splice(1,2,'ok'));
+console.log(arr);
