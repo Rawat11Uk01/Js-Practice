@@ -2,6 +2,8 @@
 // const mainheading =document.querySelector('#main-heading');
 // console.log(mainheading.textContent)
 
+
+
 // mainheading.textContent = 'this is the end';
 // console.log(mainheading.textContent)
 
@@ -1110,8 +1112,28 @@
 
 
 
-let user = {
-    name: 'kashish',
-    age: 12
-}
+// let user = {
+//     name: 'kashish',
+//     age: 12
+// }
 
+// function sum(){
+  
+//     return arguments;
+// }
+
+// console.log(sum(1,9,3));
+
+
+// let date = new Date();
+// let dd = String(date.getDate()).padStart(2,'0');
+// let mm = String(date.getMonth()).padStart(2,'0');
+// let yy = date.getFullYear();
+
+// console.log(dd+'/'+mm+'/'+yy)
+
+
+// let b =0;
+// let c =6;
+// let a = b || c;
+// console.log(a)
