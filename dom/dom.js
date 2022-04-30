@@ -1137,3 +1137,9 @@
 // let c =6;
 // let a = b || c;
 // console.log(a)
+
+// let str = (a,b,c,d,e,s,v)=>{
+//    return 
+// }
+
+// console.log(str.length)
