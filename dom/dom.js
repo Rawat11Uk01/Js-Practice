@@ -1078,7 +1078,40 @@
 
 
 
-const arr = [1,2,3,4,5,6];
+// const arr = [1,2,3,4,5,6];
 
-console.log(arr.splice(1,2,'ok'));
-console.log(arr);
+// console.log(arr.splice(1,2,'ok'));
+// console.log(arr);
+// function userDetails(username) {
+//     if (username) {
+//       console.log(salary); // undefined due to hoisting
+//       console.log(age); // ReferenceError: Cannot access 'age' before initialization
+//       let age = 30;
+//       var salary = 10000;
+//     }
+//     console.log(salary); //10000 (accessible to due function scope)
+//     console.log(age); //error: age is not defined(due to block scope)
+//   }
+//   userDetails('ok');
+// salary =1000;
+// age =20;
+// console.log(salary);
+// console.log(age);
+// let age;
+// var salary;
+
+
+// let uri = "employeeDetails?name=john&occupation=manager";
+// let encoded_uri = encodeURI(uri);
+// let decoded_uri = decodeURI(encoded_uri);
+
+// console.log(encoded_uri);
+// console.log(decoded_uri);
+
+
+
+let user = {
+    name: 'kashish',
+    age: 12
+}
+
