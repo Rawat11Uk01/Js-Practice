@@ -1118,7 +1118,7 @@
 // }
 
 // function sum(){
-  
+
 //     return arguments;
 // }
 
@@ -1143,3 +1143,34 @@
 // }
 
 // console.log(str.length)
+
+
+// for(i=0; i<10 ; i++){
+//     if(i===5){
+//         break;
+//     }
+//     console.log(i)
+// }
+
+
+// const obj = {
+//     name: 'rawat',
+//     age: 12,
+//     about: ()=>{
+//         console.log(ok)
+//     }
+// }
+
+// const obj2 = Object.create(obj);
+// console.log(obj2.name)
+
+// for(var i =0; i < 4; i++ ){
+//     setTimeout(()=> console.log(i))
+// }
+// for(
+//     let i =0; i < 4; i++ ){
+//     setTimeout(()=> console.log(i))
+// }
+
+
+// console.log('%c Color of the text', 'color: blue; font-size: x-large; background: red');
