@@ -1174,3 +1174,19 @@
 
 
 // console.log('%c Color of the text', 'color: blue; font-size: x-large; background: red');
+
+
+// const array = [1,2,3,4,5,6];
+// array.length = 2;
+// console.log(array)
+
+var obj = new Object();
+
+obj.name = 'kashish'
+console.log(obj)
+
+
+
+const o = Object.assign({age: 12},obj);
+
+console.log(o)
