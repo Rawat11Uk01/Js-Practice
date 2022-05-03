@@ -1180,13 +1180,38 @@
 // array.length = 2;
 // console.log(array)
 
-var obj = new Object();
+// var obj = new Object();
 
-obj.name = 'kashish'
-console.log(obj)
+// obj.name = 'kashish'
+// console.log(obj)
 
 
 
-const o = Object.assign({age: 12},obj);
+// const o = Object.assign({age: 12},obj);
 
-console.log(o)
+// console.log(o)
+
+
+// useEffect(() => {
+//   async function fetchdata(){
+//       const response = await axios.get();
+      
+//   }
+
+//   return () => {
+//     second
+//   }
+// }, [third])
+
+
+
+// useEffect(() => {
+//   async function fetchdata(){
+//       const response = await axios.get();
+      
+//   }
+
+//   return () => {
+//     second
+//   }
+// }, [third])
