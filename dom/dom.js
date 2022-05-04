@@ -4,6 +4,8 @@
 
 
 
+
+
 // mainheading.textContent = 'this is the end';
 // console.log(mainheading.textContent)
 
@@ -1215,3 +1217,76 @@
 //     second
 //   }
 // }, [third])
+// function sumOfThree(...elem){
+//  return new Promise((resolve, reject)=>{
+//    if(elem.length > 3){
+//      reject('only 3 elements are allowed')
+//    }else{
+//      let sumof = 0;
+//      let i = 0;
+//      while(i< elem.length){
+//        sumof += elem[i];
+//        i++;
+//      }
+//      resolve('sum is' + sumof)
+//    }
+//  })
+// }
+// sumOfThree(1,2,3,4).then((a)=> console.log(a)).catch((b)=>console.log(b))
+
+// let x = {} ,y ={name: 'rawat'} ,z ={name: 'negi'};
+// x[y] = {name: 'vivek'};
+// x[z]={name: 'akki'};
+
+// console.log(x[y])
+
+// const x = [1,2,3]
+
+// function func(num){
+//  return x.push(num)
+// }
+
+// console.log(func(4));
+// console.log(x)
+
+
+const fonc = (a)=>{
+  const arr= a.split('').reverse().join('')
+
+  if(a !== arr){
+    console.log('its not  palindrome')
+  }else{
+    console.log('its palindrome')
+  }
+
+}
+
+fonc('oko');
+
+
+
+
+
+// function checkPalindrome(string) {
+
+
+//   const arrayValues = string.split('');
+
+
+//   const reverseArrayValues = arrayValues.reverse();
+
+
+//   const reverseString = reverseArrayValues.join('');
+
+//   if(string == reverseString) {
+//       console.log('It is a palindrome');
+//   }
+//   else {
+//       console.log('It is not a palindrome');
+//   }
+// }
+
+
+// const string = prompt('Enter a string: ');
+
+// checkPalindrome(string);
