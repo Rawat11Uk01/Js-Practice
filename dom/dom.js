@@ -472,6 +472,9 @@
 // ##########Fibonacci Sequence##############😀
 
 
+
+
+
 // let x = 0;
 // let y = 1;
 // let fn = x+y;
@@ -484,8 +487,6 @@
 //     y=fn;
 //     fn = x+y;
 // }
-
-
 
 
 
@@ -581,7 +582,7 @@
 
 // const is_same = array1.length === array2.length && array1.every((curE)=>{
 //     if(array2.indexOf(curE)>-1){
-//         console.log(array2.indexOf((curE)));
+//         // console.log(array2.indexOf((curE)));
 
 //         return curE = array2[array2.indexOf((curE))]
 //     }
@@ -667,6 +668,18 @@
 //            console.log('given no is a prime no')
 //        }
 // }
+
+
+// function isPrime(num){
+//   for (i=2; i*i<= num; i++){
+//     if(num % i ===0){
+//       return false
+//     }
+
+//   }
+//   return num>1
+// }
+// console.log(isPrime(4))
 // function isPrime(num) {
 //     for ( i = 2; i*i <= num; i++)
 //         if (num % i === 0)
@@ -1261,7 +1274,7 @@ const fonc = (a)=>{
 
 }
 
-fonc('oko');
+fonc('rawat');
 
 
 
@@ -1290,3 +1303,16 @@ fonc('oko');
 // const string = prompt('Enter a string: ');
 
 // checkPalindrome(string);
+
+var x =1 ;
+function foo(){
+  var x =3;
+}
+foo();
+console.log(x);
+
+function bar(){
+  x=4;
+}
+bar();
+console.log(x);
