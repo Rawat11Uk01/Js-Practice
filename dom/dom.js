@@ -1210,7 +1210,7 @@
 // useEffect(() => {
 //   async function fetchdata(){
 //       const response = await axios.get();
-      
+
 //   }
 
 //   return () => {
@@ -1223,7 +1223,7 @@
 // useEffect(() => {
 //   async function fetchdata(){
 //       const response = await axios.get();
-      
+
 //   }
 
 //   return () => {
@@ -1263,18 +1263,18 @@
 // console.log(x)
 
 
-const fonc = (a)=>{
-  const arr= a.split('').reverse().join('')
+// const fonc = (a)=>{
+//   const arr= a.split('').reverse().join('')
 
-  if(a !== arr){
-    console.log('its not  palindrome')
-  }else{
-    console.log('its palindrome')
-  }
+//   if(a !== arr){
+//     console.log('its not  palindrome')
+//   }else{
+//     console.log('its palindrome')
+//   }
 
-}
+// }
 
-fonc('rawat');
+// fonc('rawat');
 
 
 
@@ -1304,15 +1304,43 @@ fonc('rawat');
 
 // checkPalindrome(string);
 
-var x =1 ;
-function foo(){
-  var x =3;
-}
-foo();
-console.log(x);
+// var x =1 ;
+// function foo(){
+//   var x =3;
+// }
+// foo();
+// console.log(x);
 
-function bar(){
-  x=4;
-}
-bar();
-console.log(x);
+// function bar(){
+//   x=4;
+// }
+// bar();
+// console.log(x);
+
+
+
+
+
+
+
+
+
+const arr = [{name : "Apple",count:5},{name :"Mango",count:5},{name :"Mango",count:1}] 
+
+
+returns [{name:"Mango",count:6},{name:"Apple",count:5}]
+const newArr = arr.filter((a)=> {
+
+  if(a.key === 'Mango'){
+    a.count.reducer((curE, el)=> curE +=el)
+  }
+  
+} )
+
+console.log(newArr)
+
+
+
+// emocleW ot siht tpircsavaJ !ediuG
+
+
