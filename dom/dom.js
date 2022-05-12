@@ -1325,22 +1325,61 @@
 
 
 
-const arr = [{name : "Apple",count:5},{name :"Mango",count:5},{name :"Mango",count:1}] 
+// const arr = [{name : "Apple",count:5},{name :"Mango",count:5},{name :"Mango",count:1}] 
 
 
-returns [{name:"Mango",count:6},{name:"Apple",count:5}]
-const newArr = arr.filter((a)=> {
+// returns [{name:"Mango",count:6},{name:"Apple",count:5}]
+// const newArr = arr.filter((a)=> {
 
-  if(a.key === 'Mango'){
-    a.count.reducer((curE, el)=> curE +=el)
-  }
+//   if(a.key === 'Mango'){
+//     a.count.reducer((curE, el)=> curE +=el)
+//   }
   
-} )
+// } )
 
-console.log(newArr)
+// console.log(newArr)
 
 
 
 // emocleW ot siht tpircsavaJ !ediuG
 
+// const arr = [{name : "Apple",count:5},{name :"Mango",count:5},{name :"Mango",count:1}] 
 
+// const neArr =arr.reduce((a,b)=>
+// if(b.name === 'Mango'){
+//     a += b;
+// }
+// )
+
+// console.log(neArr)
+
+// function square(n){
+//     let result = 0;
+//     for(let i=1; i<=n; i++){
+//         for(let j=1; j<=n; j++){
+//             result += 1
+//         }
+//     }
+//     return result
+// }
+// console.log(square(2))
+// console.log(square(3))
+// console.log(square(4))
+// console.log(square(5))
+// console.log(square(6))
+
+function fib(n,prev=[]){
+    if(prev[n] != null){
+          return prev[n]
+    }
+    let result;
+    if (n <=2) {
+        result = 1
+    }else{
+        result = fib(n-1,prev) + fib(n-2,prev)
+    }
+    prev[n] = result;
+    return result;
+}
+
+console.log(fib(50))
