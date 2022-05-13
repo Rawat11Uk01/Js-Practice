@@ -1415,9 +1415,14 @@
 
 
 
+function swapNo(a,b){
+ let arr = [a,b]
+  [a,b] = [b,a]
+  return arr;
 
+}
 
-
+console.log(swapNo(23,12))
 
 
 
