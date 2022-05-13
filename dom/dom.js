@@ -1334,7 +1334,7 @@
 //   if(a.key === 'Mango'){
 //     a.count.reducer((curE, el)=> curE +=el)
 //   }
-  
+
 // } )
 
 // console.log(newArr)
@@ -1368,18 +1368,64 @@
 // console.log(square(5))
 // console.log(square(6))
 
-function fib(n,prev=[]){
-    if(prev[n] != null){
-          return prev[n]
-    }
-    let result;
-    if (n <=2) {
-        result = 1
-    }else{
-        result = fib(n-1,prev) + fib(n-2,prev)
-    }
-    prev[n] = result;
-    return result;
-}
+// function fib(n,prev=[]){
+//     if(prev[n] != null){
+//           return prev[n]
+//     }
+//     let result;
+//     if (n <=2) {
+//         result = 1
+//     }else{
+//         result = fib(n-1,prev) + fib(n-2,prev)
+//     }
+//     prev[n] = result;
+//     return result;
+// }
 
-console.log(fib(50))
+// console.log(fib(50))
+
+// const arr = [
+//     {store_id: 1, price: 0.55},
+//     {store_id: 1, price: 0.25},
+//     {store_id: 2, price: 0.2},
+//     {store_id: 2, price: 0.25}
+//   ]
+  
+//   const res = Object.values(arr.reduce((acc,item) => {
+//     const { store_id } = item;
+//     const prev = acc[store_id];
+//     acc[store_id] = prev ? { ...prev, price: prev.price+item.price } : {...item};
+//     return acc;
+//   }, {}));
+  
+//   console.log(res);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
