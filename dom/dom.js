@@ -1390,14 +1390,14 @@
 //     {store_id: 2, price: 0.2},
 //     {store_id: 2, price: 0.25}
 //   ]
-  
+
 //   const res = Object.values(arr.reduce((acc,item) => {
 //     const { store_id } = item;
 //     const prev = acc[store_id];
 //     acc[store_id] = prev ? { ...prev, price: prev.price+item.price } : {...item};
 //     return acc;
 //   }, {}));
-  
+
 //   console.log(res);
 
 
@@ -1415,22 +1415,42 @@
 
 
 
-function swapNo(a,b){
- let arr = [a,b]
-  [a,b] = [b,a]
-  return arr;
+// function swapNo(a,b){
+//  let arr = [a,b]
+//   [a,b] = [b,a]
+//   return arr;
 
-}
+// }
 
-console.log(swapNo(23,12))
-
-
+// console.log(swapNo(23,12))
 
 
 
+// let a = 2;
+// let b = 3;
+
+// a= a+b;
+// b = a-b;
+// a = a-b;
+
+
+
+// console.log(a,b)
 
 
 
 
 
 
+
+// function reverse(str){
+//    let reverse = '';
+//    for(let i=str.length-1; i>=0; i--){
+//        reverse += str[i];
+//    }
+
+// return reverse;
+
+// }
+
+// console.log(reverse('okollk'))
