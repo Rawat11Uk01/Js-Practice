@@ -1454,3 +1454,12 @@
 // }
 
 // console.log(reverse('okollk'))
+
+
+// function area(a,b){
+//      let areaOfTriangle = a*b/2
+//      return areaOfTriangle;
+// }
+// const height = prompt('enter the height');
+// const base = prompt('enter the base');
+// console.log(area(height,base))
