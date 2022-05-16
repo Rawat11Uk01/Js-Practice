@@ -1485,4 +1485,17 @@
 // }
 
 
+// console.log(thi
+
+// }
+// const height = prompt('enter the height');
+// const base = prompt('enter the base');
+// console.log(area(height,base))
+
+// function thirdSide(a,b){
+//       const thirdEdge = (a+b)-1;
+//       return thirdEdge;
+// }
+
+
 // console.log(thirdSide(40,40))
