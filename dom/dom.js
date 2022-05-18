@@ -1499,3 +1499,11 @@
 
 
 // console.log(thirdSide(40,40))
+
+// const ip = 'This is a string';
+
+
+// const words = ip.split(' ');
+// console.log(words);
+// const newWord = words.map((a)=> a.split('').reverse().join('')).join(' ');
+// console.log(newWord)
