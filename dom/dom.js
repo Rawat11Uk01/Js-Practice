@@ -1507,3 +1507,23 @@
 // console.log(words);
 // const newWord = words.map((a)=> a.split('').reverse().join('')).join(' ');
 // console.log(newWord)
+
+// const height = prompt('enter the height');
+// const base = prompt('enter the base');
+// console.log(area(height,base))
+
+// function thirdSide(a,b){
+//       const thirdEdge = (a+b)-1;
+//       return thirdEdge;
+// }
+
+
+// console.log(thirdSide(40,40))
+
+// const ip = 'This is a string';
+
+
+// const words = ip.split(' ');
+// console.log(words);
+// const newWord = words.map((a)=> a.split('').reverse().join('')).join(' ');
+// console.log(newWord)
