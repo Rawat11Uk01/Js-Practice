@@ -1527,3 +1527,23 @@
 // console.log(words);
 // const newWord = words.map((a)=> a.split('').reverse().join('')).join(' ');
 // console.log(newWord)
+
+
+
+
+
+// const func = (...a)=>{
+// console.log(...a)
+
+
+// }
+
+// const arr = [1,2,3,4,5];
+// func(...arr)
+
+const product = [];
+
+
+const result = product.map((data)=>data.image );
+
+console.log(result)
