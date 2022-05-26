@@ -1541,9 +1541,13 @@
 // const arr = [1,2,3,4,5];
 // func(...arr)
 
-const product = [];
+// const product = [];
 
 
-const result = product.map((data)=>data.image );
+// const result = product.map((data)=>data.image );
 
-console.log(result)
+// console.log(result)
+
+
+// const a = 'x,saxaxaxax';
+// console.log(a.split(','))
