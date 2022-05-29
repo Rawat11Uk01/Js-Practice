@@ -1554,3 +1554,7 @@
 const data = ['English','French', 'German', 'Italian', 'Japanese', 'Korean', 'Portuguese', 'Russian', 'Spanish', 'Turkish', 'Portuguese-Brazil', 'Traditional Chinese', 'Simplified Chinese']
 console.log(data.toString())
 
+// const a = 'x,saxaxaxax';
+// console.log(a.split(','))
+const data = ['English','French', 'German', 'Italian', 'Japanese', 'Korean', 'Portuguese', 'Russian', 'Spanish', 'Turkish', 'Portuguese-Brazil', 'Traditional Chinese', 'Simplified Chinese']
+console.log(data.toString())
